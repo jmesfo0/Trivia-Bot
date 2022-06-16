@@ -7,7 +7,7 @@ import { AutoPoster } from 'topgg-autoposter';
 const client = new MDClient({
     token: process.env.BOT_TOKEN,
     prefix: '$',
-    owners: ['Eleni Rotsides', 'Joshua Hector', 'Sylvia Boamah', 'Julio Lora'],
+    owners: ['309536563161989120','809814323396214786'],
 });
 
 client.start();
