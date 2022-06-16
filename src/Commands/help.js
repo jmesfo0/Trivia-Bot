@@ -4,7 +4,7 @@ import Command from '../Structures/Command.js';
 export default class extends Command {
     constructor(...args) {
         super(...args, {
-            aliases: ['halp', 'hwlp', 'hrlp'],
+            aliases: ['halp', 'hwlp', 'hrlp', 'hlp'],
             description: "Displays all the bot's commands",
             category: 'Utilities',
             usage: '[command]',
@@ -54,7 +54,7 @@ export default class extends Command {
             // This will be necessary later when I implement multi word commands
             // `Command Parameters: \`<>\` is strict & \`[]\` is optional`,
             embed.setDescription(
-                `❯ The bot's prefix is: ${this.client.prefix}\n❯ For more detailed information on a specific command, type \`!help\` followed by any of the commands listed below\n\n**These are the available commands for Trivia Bot:**\n`
+                `❯ The bot's prefix is: ${this.client.prefix}\n❯ For more detailed information on a specific command, type \`help\` followed by any of the commands listed below\n\n**These are the available commands for Trivia Bot:**\n`
             );
             let categories;
             if (!this.client.owners.includes(message.author.id)) {
