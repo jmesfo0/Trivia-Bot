@@ -1,6 +1,4 @@
 import Event from '../Structures/Event.js';
-client.bot = require('../bot');
-
 
 export default class extends Event {
     constructor(...args) {
