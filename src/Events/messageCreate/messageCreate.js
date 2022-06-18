@@ -14,7 +14,7 @@ export default class extends Event {
                 'Looking for me?',
                 'You know you wanna play...',
                 'What are you waiting for, play some trivia!',
-                'If you ever forget how to use me, just type '${this.client.prefix}'help',
+                'If you ever forget how to use me, just type $help',
             ];
             let randomIndex = Math.floor(Math.random() * responseArray.length);
 
